@@ -1,0 +1,32 @@
+$font-main:'Barlow Semi Condensed',
+sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 50px auto;
+}
+
+.testimonials {
+    font-family: $font-main;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.author {
+    &__avatar {
+        img {
+            object-fit: cover;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+
+        }
+    }
+}

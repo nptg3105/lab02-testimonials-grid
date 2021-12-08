@@ -1,0 +1,58 @@
+$font-main:'Barlow Semi Condensed',
+sans-serif;
+$violet-color:#7541c8;
+$grey-color: #48556a;
+$light-grey-color: #cfcfcf;
+$white-color: #fff;
+$bg-color: #ecf2f8;
+$black-color: #19212e;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $bg-color;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 50px auto;
+
+}
+
+.testimonials {
+    font-family: $font-main;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    &__item {
+        border-radius: 5px;
+
+        &--violet {
+            background-color: $violet-color;
+        }
+    }
+}
+
+.author {
+    display: flex;
+    align-items: center;
+
+    &__avatar {
+        margin-right: 16px;
+
+        img {
+            object-fit: cover;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+
+        }
+    }
+
+}

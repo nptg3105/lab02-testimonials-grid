@@ -1,0 +1,138 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ecf2f8;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 50px auto;
+}
+
+.testimonials {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "violet-area violet-area grey-area white-tall-area" "white-area black-area black-area white-tall-area";
+  color: #fff;
+}
+
+.testimonials__item {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.testimonials__item--violet {
+  background-color: #7541c8;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: violet-area;
+}
+
+.testimonials__item--grey {
+  background-color: #48556a;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: grey-area;
+}
+
+.testimonials__item--tall {
+  background-color: #fff;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: white-tall-area;
+}
+
+.testimonials__item--white {
+  background-color: #fff;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: white-area;
+}
+
+.testimonials__item--black {
+  background-color: #19212e;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: black-area;
+}
+
+.testimonials__heading {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.testimonials__heading--black {
+  color: #19212e;
+}
+
+.testimonials__desc {
+  font-size: 14px;
+  color: #cfcfcf;
+}
+
+.testimonials__desc--grey {
+  color: #48556a;
+}
+
+.author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.author__name--black {
+  color: #19212e;
+}
+
+.author__avatar {
+  margin-right: 16px;
+}
+
+.author__avatar img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.author__name--name {
+  font-size: 14px;
+}
+
+.author__name--status {
+  font-size: 9px;
+}
+
+@media (max-width: 996px) {
+  .container {
+    max-width: 850px;
+    margin: 50px auto;
+  }
+  .testimonials {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    -ms-grid-rows: (minmax(150px, 1fr))[auto-fill];
+        grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+/*# sourceMappingURL=style.css.map */
